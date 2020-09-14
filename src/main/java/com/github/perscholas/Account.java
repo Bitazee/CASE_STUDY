@@ -12,8 +12,9 @@ public class Account {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    private String name;
-    private String pass;
+    private String userName;
+
+    private String userPass;
 
 
     public Long getId() {
@@ -25,18 +26,18 @@ public class Account {
     }
 
     public String getName() {
-        return name;
+        return userName;
     }
 
     public void setName(String name) {
-        this.name = name;
+        this.userName = name;
     }
 
     public String getPass() {
-        return pass;
+        return userPass;
     }
 
     public void setPass(String pass) {
-        this.pass = pass;
+        this.userPass = pass;
     }
 }

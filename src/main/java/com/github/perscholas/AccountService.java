@@ -10,10 +10,10 @@ import java.util.List;
 @Service
 public class AccountService {
 
-    private AccountController repository;
+    private AccountRepository repository;
 
     @Autowired
-    public AccountService(AccountController repository){
+    public AccountService(AccountRepository repository){
         this.repository = repository;
     }
 
@@ -22,6 +22,12 @@ public class AccountService {
     public Account create(Account createdProduct){
         return repository.save(createdProduct);
     }
+
+
+    public Account readById(Long id){
+        return repository.findById(id).get();
+    }
+
     public List<Account> readAll(){
         Iterable<Account> productIterable = repository.findAll();
         List<Account> productList = new ArrayList<>();
@@ -29,10 +35,8 @@ public class AccountService {
         return productList;
     }
 
-    public Account readById(Long id){
-        return repository.findById(id).get();
-    }
-    public Account updateById(Long id){
+
+    public Account updateById(Long id, Account newData){
         Account dataToChange = readById(id);
         dataToChange.setName(dataToChange.getName());
         dataToChange.setPass(dataToChange.getPass());
@@ -41,6 +45,9 @@ public class AccountService {
         return dataToChange;
     }
 
+    public Account delete(Account account){
+        return null;
+    }
     public Account deleteById(Long id){
         Account dataToRemove = readById(id);
         repository.delete(dataToRemove);

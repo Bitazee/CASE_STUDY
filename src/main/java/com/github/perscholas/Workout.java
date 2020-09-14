@@ -12,7 +12,7 @@ public class Workout {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    private String name;
+    private String workoutName;
 
     public Long getId() {
         return id;
@@ -23,10 +23,10 @@ public class Workout {
     }
 
     public String getName() {
-        return name;
+        return workoutName;
     }
 
     public void setName(String name) {
-        this.name = name;
+        this.workoutName = name;
     }
 }

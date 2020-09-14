@@ -41,5 +41,10 @@ public class AccountController {
         return new ResponseEntity<>(service.updateById(id, newData), HttpStatus.OK);
     }
 
+    @DeleteMapping("/delete/{id}")
+    public ResponseEntity<Account> delete(@PathVariable Long id){
+        return new ResponseEntity<>(service.deleteById(id), HttpStatus.OK);
+    }
+
 
 }

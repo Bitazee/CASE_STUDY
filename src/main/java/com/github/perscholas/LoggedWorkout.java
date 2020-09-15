@@ -1,9 +1,6 @@
 package com.github.perscholas;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
 public class LoggedWorkout {
@@ -11,6 +8,16 @@ public class LoggedWorkout {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
+
+    @ManyToOne
+    @JoinColumn(name = "user_id")
+    private Long accId;
+
+    @ManyToOne
+    @JoinColumn(name = "workout_id")
+    private Long typeOfWorkout;
+
+    private String description;
 
 
 }

@@ -24,7 +24,7 @@
 			</div>
 			<div id="navbar" class="collapse navbar-collapse">
 				<ul class="nav navbar-nav">
-					<li class="active"><a href="#">Home</a></li>
+					<li class="active"><a href="/registration-form">REGISTER</a></li>
 					<li><a href="#about">About</a></li>
 				</ul>
 			</div>

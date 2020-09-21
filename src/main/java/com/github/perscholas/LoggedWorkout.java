@@ -9,11 +9,11 @@ public class LoggedWorkout {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    @ManyToOne
+
     @JoinColumn(name = "user_id")
     private Long accId;
 
-    @ManyToOne
+
     @JoinColumn(name = "workout_id")
     private Long typeOfWorkout;
 

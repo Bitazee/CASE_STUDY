@@ -12,6 +12,10 @@ public class Workout {
 
     private String workoutName;
 
+    public Workout(String workoutName) {
+        this.workoutName = workoutName;
+    }
+
     public Long getId() {
         return id;
     }
@@ -27,4 +31,5 @@ public class Workout {
     public void setName(String name) {
         this.workoutName = name;
     }
+
 }

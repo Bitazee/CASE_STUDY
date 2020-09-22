@@ -14,6 +14,10 @@ public class Account {
 
     private String userPass;
 
+    public Account(String name, String pass){
+        setName(name);
+        setPass(pass);
+    }
 
     public Long getId() {
         return id;

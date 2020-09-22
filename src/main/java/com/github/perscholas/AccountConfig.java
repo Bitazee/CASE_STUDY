@@ -14,6 +14,11 @@ public class AccountConfig {
 
     @PostConstruct
     public void setup(){
+        repository.saveAll(Arrays.asList(
+                new Account("Leon", "Hunter"),
+                new Account("Marcus", "Password"),
+                new Account("Yoga", "Fire")
 
+        ));
     }
 }

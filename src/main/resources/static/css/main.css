@@ -1,7 +1,23 @@
-h1{
-	color:#0000FF;
+body {
+    background-color: beige;
 }
 
-h2{
-	color:#FF0000;
+
+object {
+    height: 100vh;
+    width: 100vh;
+}
+h1{
+    text-align: center;
+}
+nav{
+    background-color: black;
+    color: white;
+}
+.jumbotron{
+    text-align: center;
+    font-family: 'Roberto Slab', serif;
+}
+h3{
+    text-align: center;
 }

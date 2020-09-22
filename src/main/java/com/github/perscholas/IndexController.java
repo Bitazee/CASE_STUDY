@@ -6,8 +6,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/hello-world")
-public class HelloWorldController {
+@RequestMapping("/home")
+public class IndexController {
 
     @GetMapping
     String getView(Model model) {

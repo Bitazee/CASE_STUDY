@@ -19,14 +19,12 @@
   <div class = "jumbotron" style="text-align: center;">
     <h2>Please complete by entering your information</h2> <br>
   </div>
-  <form action="/registration-confirmation" style="text-align: center;">
+  <form action="/account-controller/create" method = "post" style="text-align: center;">
 
-    <label for="fname">First name:</label>
-    <input type="text" id="fname" name="fname"><br><br>
-    <label for="lname">Last name:</label>
-    <input type="text" id="lname" name="lname"><br><br>
-    <label for="email">Email:</label>
-    <input type="text" id="email" name="lname"><br><br>
+    <label for="fname">Username:</label>
+    <input type="text" id="uName" name="uName" required><br><br>
+    <label for="lname">Password:</label>
+    <input type="text" id="pWord" name="pWord" required><br><br>
     <label for="work_out_Experince">Work out Experice:</label>
     <input type="radio" name="work_out_Experince" id="None"> None
     <input type="radio" name="work_out_Experince" id="Casual"> Casual

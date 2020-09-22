@@ -20,11 +20,11 @@
   <nav class="navbar navbar-deafult">
     <div class="container-fluid">
       <div class="navbar-header">
-        <a class = "navbar-brand" href="index.html">CLT LOG</a>
+        <a class = "navbar-brand" href="/home">CLT LOG</a>
       </div>
       <ul class="nav navbar-nav">
         <li class="active">HOME</li>
-        <li><a href="RegisterFormPage.html">Register</a></li>
+        <li><a href="/registration-form">Register</a></li>
       </ul>
     </div>
   </nav>

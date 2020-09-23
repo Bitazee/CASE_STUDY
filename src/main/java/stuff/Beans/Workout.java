@@ -1,4 +1,4 @@
-package com.github.perscholas;
+package stuff.Beans;
 
 import javax.persistence.*;
 

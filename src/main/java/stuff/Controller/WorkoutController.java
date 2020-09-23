@@ -1,4 +1,4 @@
-package com.github.perscholas;
+package stuff.Controller;
 
 public class WorkoutController {
 

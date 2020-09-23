@@ -1,7 +1,9 @@
-package com.github.perscholas;
+package stuff.Configs;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
+import stuff.Beans.Account;
+import stuff.Repos.AccountRepository;
 
 import javax.annotation.PostConstruct;
 import java.util.Arrays;

@@ -1,10 +1,12 @@
-package com.github.perscholas;
+package stuff.Controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
+import stuff.Beans.Account;
+import stuff.Service.AccountService;
 
 import java.util.List;
 
@@ -21,7 +23,7 @@ public class AccountController {
     }
 
     @PostMapping(value = "/create")
-    public ResponseEntity<Account> create(@RequestBody  Account newAccount){
+    public ResponseEntity<Account> create(Account newAccount){
         return new ResponseEntity<Account>(service.create(newAccount), HttpStatus.CREATED);
     }
 
@@ -29,6 +31,4 @@ public class AccountController {
     public ResponseEntity<Account> delete(@PathVariable Long id){
         return new ResponseEntity<>(service.deleteById(id), HttpStatus.OK);
     }
-
-
 }

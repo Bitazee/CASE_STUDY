@@ -1,4 +1,4 @@
-package com.github.perscholas;
+package stuff;
 
 import org.junit.Assert;
 import org.junit.Test;

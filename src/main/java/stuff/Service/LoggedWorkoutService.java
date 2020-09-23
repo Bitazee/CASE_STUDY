@@ -1,7 +1,9 @@
-package com.github.perscholas;
+package stuff.Service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import stuff.Beans.LoggedWorkout;
+import stuff.Repos.LoggedWorkoutRepository;
 
 import java.util.ArrayList;
 import java.util.List;

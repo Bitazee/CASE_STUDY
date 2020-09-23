@@ -1,4 +1,4 @@
-package com.github.perscholas;
+package stuff.Controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

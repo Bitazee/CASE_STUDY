@@ -1,16 +1,15 @@
-package com.github.perscholas;
-
+package stuff.Controller;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/registration-form")
-public class RegistrationFormController {
+@RequestMapping("/registration-confirmation")
+public class RegistrationConfirmationController {
 
     @GetMapping
     String getView(Model model){
-        return "registration-form"; //returns a view from the JSP
+        return "registrationConfirmation"; //returns a view from the JSP
     }
 }

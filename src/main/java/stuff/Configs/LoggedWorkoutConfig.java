@@ -1,4 +1,4 @@
-package com.github.perscholas;
+package stuff.Configs;
 
 public class LoggedWorkoutConfig {
 }

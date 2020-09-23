@@ -1,8 +1,9 @@
-package com.github.perscholas;
+package stuff.Configs;
 
-import org.hibernate.jdbc.Work;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
+import stuff.Beans.Workout;
+import stuff.Repos.WorkoutRepository;
 
 import javax.annotation.PostConstruct;
 import java.util.Arrays;

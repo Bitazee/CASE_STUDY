@@ -22,10 +22,17 @@ public class AccountController {
         this.service = productService;
     }
 
-    @PostMapping(value = "/create")
+    @PostMapping(value = "/create", consumes = "application/x-www-form-urlencoded")
     public ResponseEntity<Account> create(Account newAccount){
         return new ResponseEntity<Account>(service.create(newAccount), HttpStatus.CREATED);
     }
+
+//    @PostMapping(value = "/create", consumes = "application/json")
+//    public ResponseEntity<Account> create(@RequestBody Account newAccount){
+//        return new ResponseEntity<Account>(service.create(newAccount), HttpStatus.CREATED);
+//    }
+
+
 
     @DeleteMapping("/delete/{id}")
     public ResponseEntity<Account> delete(@PathVariable Long id){

@@ -10,7 +10,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <link href="./css/style.css" rel="stylesheet">
+  <link href="../../../resources/static/css/main.css" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head> <!-- header ends here -->
 
@@ -29,7 +29,7 @@
     </div>
   </nav>
 
-    <div class="jumbotron" style="background-image: url(./img/CLT_SKYLINE.jpg); background-size: cover;">
+    <div class="jumbotron" style="background-image: url(../../../resources/static/css/img/CLT_SKYLINE.jpg); background-size: cover;">
       <h1>Welcome to the CLT Workout Logger</h1>
     </div>
 
@@ -47,7 +47,7 @@
         <ul>
           <li>Start Small</li>
           <li>Set realistic goals</li>
-          <li>Take peridoic breaks at least 1-2 weeks</li>
+          <li>Take periodic breaks at least 1-2 weeks</li>
         </ul>
       </div>
     </div>
